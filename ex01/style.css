@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #3bace9;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+
+main > section {
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+div {
+    text-align: center;
+    margin: 10px;
+}
+
+#foto > img {
+    height: 300px;
+}
+
+footer > p {
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
