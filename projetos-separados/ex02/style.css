@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin: 10px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main > h2 {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(40, 182, 40);
+    margin-bottom: 10px;
+}
+
+div#input > label {
+    width: 10%;
+}
+
+div#inputNome > input {
+    width: 90%;
+    padding: 5px 0px;
+    font-size: 1em;
+}
+
+div#inputValor {
+    width: 100%;
+    position: relative;
+}
+
+#inputValor input {
+    margin: 10px 0px;
+    width: 40%;
+    padding: 5px 0px;
+}
+
+#inputValor span {
+    position: absolute;
+    display: block;
+    top: 32%;
+    left: 57%;
+}
+
+#inputValor input[type=number] {
+    text-indent: 29px;
+    font-size: 1em;
+}
+
+#botao {
+    width: 100%;
+    text-align: center;
+}
+
+#botao > input {
+    padding: 10px;
+    background-color: rgb(26, 158, 26);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao > input:hover {
+    background-color: rgb(17, 97, 17);
+}
+
+table {
+    width: 100%;
+    margin: 20px 0px;
+    border-collapse: collapse;
+}
+
+table th {
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+    text-align: start;
+    font-size: .8em;
+}
+
+table th:nth-child(3) {
+    border-right: 0;
+}
+
+table th:last-child {
+    border-left: 0px;
+}
+
+table td {
+    background-color: rgb(222, 222, 222);
+    border: 1px solid rgb(168, 168, 168);
+    padding: 10px;
+    font-size: .9em;
+}
+
+table td input {
+    font-size: 1em;
+    padding: 5px 0px;
+    width: 95%;
+}
+
+table td:last-child {
+    border-left: 0;
+}
+
+table td:nth-child(3) {
+    border-right: 0;
+}
+
+footer {
+    text-align: center;
+} 
