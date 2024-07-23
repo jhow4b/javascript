@@ -9,7 +9,7 @@ function adicionar() {
     } else {
         var item = document.createElement("li")
         item.setAttribute("class", "itens")
-        item.innerHTML += `${fazer.value} <input type="button" value="X" onclick="deletarItem()"> <input type="checkbox"/>`
+        item.innerHTML += `${fazer.value} <input type="button" value="X"> <input type="checkbox"/>`
         lista.appendChild(item)
 
         fazer.value = ""
@@ -17,11 +17,13 @@ function adicionar() {
     }
 }
 
+lista.addEventListener("click", function(e){
+    if (e.target.tagName === "INPUT") {
+        e.target.parentElement.remove()
+    }
+}, false)
+
 function limparLista() {
     lista.innerHTML = ""
 }
 
-function deletarItem() {
-    let item = document.querySelector("li.itens")
-    lista.removeChild(item)
-}

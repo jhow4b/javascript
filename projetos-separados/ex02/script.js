@@ -20,7 +20,7 @@ function adicionar() {
         let linha = document.createElement("tr")
         let f = new Intl.NumberFormat("pt-br", {currency: "BRL", style: "currency"})
         linha.setAttribute("class", "linha")
-        linha.innerHTML += `<td>${nome.value}</td><td>${data.value}</td><td>${f.format(valor.value)}</td><td><input type="button" value="X" onclick="deletar()"></td>`
+        linha.innerHTML += `<td>${nome.value}</td><td>${data.value}</td><td>${f.format(valor.value)}</td><td><input type="button" value="X"></td>`
         tabela.appendChild(linha)
         nome.value = ""
         data.value = ""
@@ -29,8 +29,8 @@ function adicionar() {
     }
 }
 
-function deletar() {
-    let linha = document.querySelector(".linha")
-    tabela.removeChild(linha)
-    limparTabela()
-}
+tabela.addEventListener("click", function(e) {
+    if(e.target.tagName === "INPUT") {
+        e.target.closest("tr").remove()
+    }
+}, false)
