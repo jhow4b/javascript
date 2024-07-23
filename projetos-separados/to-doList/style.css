@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+main > h1 {
+    margin: 10px 0px;
+}
+
+div#resultado {
+    display: flex;
+    justify-content: center;
+}
+
+div#resultado > ol {
+    margin: 10px;
+    padding: 10px;
+}
+
+div#resultado > ol > li {
+    margin: 10px 0px;
+    align-items: center;
+}
+
+div#resultado > ol > li > input{
+    padding: 2px 10px;
+}
+
+div#resultado > ol > li > input[type=checkbox] {
+    transform: scale(1.5);
+    margin-left: 5px;
+}
