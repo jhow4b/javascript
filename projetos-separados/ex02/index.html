@@ -6,7 +6,7 @@
     <title>Despesas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="limparTabela()">
     <header>
         <h1>Rastreador de Despesas</h1>
     </header>
@@ -21,28 +21,22 @@
         <div id="inputValor">
             <label for="idata">Data: </label><input type="date" name="data" id="idata">
             
-            <label for="ivalor">Valor: <input type="number" name="valor" id="ivalor"><span>R$</span></label>
+            <label for="ivalor">Valor: <input type="number" name="valor" id="ivalor"></label>
         </div>
         
         <div id="botao">
             <input type="button" value="Adicionar Despesa" onclick="adicionar()">
         </div>
-        <table>
+        <table id="tabela">
             <tr>
                 <th>Nome</th>
                 <th>Data</th>
                 <th>Valor</th>
                 <th></th>
             </tr>
-            <tr>
+            <tr id="vazio" class="esconder">
                 <td colspan="4">Nenhum valor registrado</td>
             </tr>
-            <!-- <tr>
-                <td>Amazon</td>
-                <td>29/03/2004</td>
-                <td>R$29,90</td>
-                <td><input type="button" value="X" onclick="deletar()"></td>
-            </tr> -->
         </table>
     </main>
 
