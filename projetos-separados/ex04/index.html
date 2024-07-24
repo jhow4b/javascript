@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notas</h1>
+    </header>
+
+    <main>
+        <h2>Adicione uma nova nota:</h2>
+        <input type="text" name="texto" id="itexto" placeholder="Digite aqui o seu texto">
+        <input type="button" value="Adicionar Nota" onclick="adicionarNota()">
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="fechar" onclick="fechar()">&times;</span>
+                <p id="resultado">Olá mundo</p>
+            </div>
+
+        </div>
+
+        <section id="todasNotas">
+            <p id="nenhuma">Nenhuma nota adicionada!</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; Jhonathan Bueno</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
