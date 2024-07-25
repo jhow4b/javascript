@@ -32,5 +32,6 @@ function adicionar() {
 tabela.addEventListener("click", function(e) {
     if(e.target.tagName === "INPUT") {
         e.target.closest("tr").remove()
+        limparTabela()
     }
 }, false)
