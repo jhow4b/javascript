@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: rgb(180, 180, 180);
+}
