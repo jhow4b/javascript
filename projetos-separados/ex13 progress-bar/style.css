@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+/* 
+
+PROGRESS BAR 1
+
+.progress-bar {
+    width: 350px;
+    height: 10px;
+    background-color: rgb(214, 214, 214);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: rgb(78, 255, 47);
+    transition: all .2s ease;
+}
+
+.loading {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 30px;
+} */
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.progress-circle {
+    stroke-dasharray: 189;
+    stroke-dashoffset: 189;
+}

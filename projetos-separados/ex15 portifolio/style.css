@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    color: rgb(61, 61, 61);
+    background-color: rgb(22, 22, 22);
+}
+
+.inicio {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.meio {
+    overflow: hidden;
+    width: 100%;
+}
+
+.inicioTexto {
+    font-size: 60vh;
+}
+
+.inicioImg {
+    height: 100%;
+}
+
+
+.fundo {
+    height: 100vh;
+    line-height: 100vh;
+    font-weight: 900;
+}
+
+.fundo:first-child {
+    background-color: rgb(118, 49, 187);
+    font-size: 10rem;
+    text-align: center;
+}
+
+.fundo.preto, .fundo.roxo {
+    font-size: 9rem;
+}
+
+.fundo.preto {
+    background: url(img/bg1.png);
+}
+
+.fundo.roxo {
+    background: url(img/bg2.png);
+    background-color: rgb(118, 49, 187);
+}
+
+
+.projetosBox {
+    height: 100vh;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxOne {
+    flex: 4;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.phoneLap {
+    flex: 2;
+}
+
+.boxTitulo {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.boxTexto {
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 600px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.boxBotao {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: gray;
+    border: 2px solid gray;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.boxBotao::after {
+    content: 'Ver Demo';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    color: rgb(61, 61, 61);
+    top: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s all;
+}
+
+.boxBotao:hover.boxBotao::after {
+    left: 0;
+}
+
+.laptopImg {
+    margin: 0px 30%;
+}
+
+
+.github {
+    height: 100vh;
+}
+
+.gitTexto {
+    font-size: 90px;
+    text-align: center;
+}
+
+.gitTab {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gitMonths {
+    position: absolute;
+    bottom: 0;
+}
+
+.meses {
+    margin: 0px 20px;
+}
