@@ -62,7 +62,6 @@
 
 
 .projetosBox {
-    height: 100vh;
     font-size: 7rem;
     text-align: center;
 }
@@ -132,30 +131,53 @@
     margin: 0px 30%;
 }
 
-
-.github {
-    height: 100vh;
-}
-
 .gitTexto {
     font-size: 90px;
     text-align: center;
 }
 
-.gitTab {
-    width: 100%;
-    height: 50%;
+.github {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: space-around;
+}
+
+.gitTab {
+    width: 820px;
+    text-align: center;
 }
 
 .gitMonths {
-    position: absolute;
-    bottom: 0;
+    padding: 10px;
+    color: #555;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.meses {
-    margin: 0px 20px;
+.gitCont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.gitBox {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(35, 35, 35);
+    transition: 1s all;
+}
+
+.gitBox.active:nth-child(4n) {
+    background-color: rgb(8, 86, 8);
+}
+
+.gitCont:hover .active:nth-child(2n + 1) {
+    background-color: rgb(8, 86, 8);
+}
+
+.gitCont:hover .active:nth-child(2n) {
+    background-color: rgb(5, 63, 5);
 }
