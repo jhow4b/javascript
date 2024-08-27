@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificação</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="botoes">
+            <button onclick="showNotification(successMsg)" class="botao success">Sucesso</button>
+            <button onclick="showNotification(errorMsg)" class="botao error">Erro</button>
+            <button onclick="showNotification(invalidMsg)" class="botao invalid">Inválido</button>
+        </div>
+        <div class="notifBox"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
